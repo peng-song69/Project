@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-b7)(mgjvj6_9y6%3l(m6lc3bjfx=3q3cn%&dj83fj!s!d%h(0%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['2026project.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -132,3 +132,9 @@ import os
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# បន្ថែមនៅខាងក្រោមបង្អស់នៃ settings.py
+CSRF_TRUSTED_ORIGINS = [
+    'https://2026_b204.pythonanywhere.com',
+    'http://2026_b204.pythonanywhere.com',
+]
